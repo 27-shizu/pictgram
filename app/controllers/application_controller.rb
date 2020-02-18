@@ -12,9 +12,7 @@ class ApplicationController < ActionController::Base
     !current_user.nil?
   end
 
-  
-  def after_sign_out_path_for(resource)
-    not_logined_path
+  def login?
   end
   
 end
