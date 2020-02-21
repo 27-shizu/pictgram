@@ -1,0 +1,2 @@
+module FacoritesHelper
+end
