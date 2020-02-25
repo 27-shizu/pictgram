@@ -7,11 +7,12 @@ Rails.application.routes.draw do
   
   get    '/login', to: 'sessions#new'
   post   '/login', to: 'sessions#create'
-  delete '/login', to: 'sessions#destory'
+  delete '/logout', to: 'sessions#destory'
   
   resources :users
   resources :topics
   
   get 'favorites/index'
   post '/favorites', to: 'favorites#create'
+  delete '/favorites', to: 'favorites#destory'
 end
